@@ -1,0 +1,28 @@
+name: Build iOS App
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Build
+        run: |
+          xcodebuild -project PillReminder.xcodeproj -scheme PillReminder -sdk iphoneos -configuration Release build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+          
+          mkdir Payload
+          cp -r build/Release-iphoneos/PillReminder.app Payload/
+          zip -r PillReminder.ipa Payload
+      
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: PillReminder
+          path: PillReminder.ipa
