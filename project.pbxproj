@@ -1,0 +1,58 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+		/* Begin PBXFileReference section */
+		13B07F961A680F5B00A75B9A /* PillReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PillReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		/* End PBXFileReference section */
+
+		/* Begin PBXGroup section */
+		13B07F951A680F5B00A75B9A = {
+			isa = PBXGroup;
+			children = (
+				13B07F971A680F5B00A75B9A /* PillReminder */,
+				13B07F961A680F5B00A75B9A /* PillReminder.app */,
+			);
+			sourceTree = "<group>";
+		};
+		13B07F971A680F5B00A75B9A /* PillReminder */ = {
+			isa = PBXGroup;
+			children = (
+				/* Папка с исходниками */
+			);
+			path = PillReminder;
+			sourceTree = "<group>";
+		};
+		/* End PBXGroup section */
+
+		/* Begin PBXProject section */
+		13B07F931A680F5B00A75B9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = "";
+			};
+			buildConfigurationList = 13B07F941A680F5B00A75B9A /* Build configuration list for PBXProject "PillReminder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = 13B07F951A680F5B00A75B9A;
+			productRefGroup = 13B07F961A680F5B00A75B9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+		/* End PBXProject section */
+	};
+	rootObject = 13B07F931A680F5B00A75B9A /* Project object */;
+}
